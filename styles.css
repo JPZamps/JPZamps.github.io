@@ -226,3 +226,18 @@ h1 em { display: block; font-style: italic; font-weight: 500; color: var(--verme
   .roteiro { grid-template-columns: 1fr; }
   .capa { width: 180px; }
 }
+
+/* fotos ilustrativas com legenda */
+.ilus { position: relative; overflow: hidden; }
+.ilus img { width: 100%; height: 100%; object-fit: cover; }
+figure.foto { margin: 32px 0 0; }
+figure.projeto__img { margin: 0 0 22px; }
+figure.card__img { margin: -34px -30px 28px; }
+.ilus figcaption {
+  position: absolute; right: 8px; bottom: 8px; padding: 3px 8px;
+  background: rgba(10, 10, 10, .7); border-radius: 2px;
+  font-size: .6rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #d8d4d2;
+}
+.contatos { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; margin-top: 28px; font-style: normal; font-family: var(--mono); font-size: .9rem; }
+.contatos a { color: var(--suave); text-decoration: none; overflow-wrap: anywhere; }
+.contatos a:hover { color: var(--texto); }
