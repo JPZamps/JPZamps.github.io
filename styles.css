@@ -261,3 +261,11 @@ figure.card__img { margin: -34px -30px 28px; }
 
 @media (max-width: 860px) { .traj { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .creditos { grid-template-columns: 1fr 1fr; } .creditos li:last-child { grid-column: 1 / -1; } }
+
+/* cartão de perfil do LinkedIn */
+.perfil { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 18px; margin: 40px auto 0; padding: 20px 24px; max-width: 560px; text-align: left; background: var(--fundo-alt); border: 1px solid var(--linha); border-radius: 6px; }
+.perfil__logo { flex: none; width: 44px; height: 44px; display: grid; place-items: center; background: #0a66c2; border-radius: 6px; color: #fff; font: 700 1.4rem/1 var(--sans); }
+.perfil__txt { flex: 1 1 200px; }
+.perfil__txt p { margin: 0; font-size: .82rem; }
+.perfil .perfil__nome { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--texto); }
+.perfil .btn { cursor: pointer; }
