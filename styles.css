@@ -241,3 +241,23 @@ figure.card__img { margin: -34px -30px 28px; }
 .contatos { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; margin-top: 28px; font-style: normal; font-family: var(--mono); font-size: .9rem; }
 .contatos a { color: var(--suave); text-decoration: none; overflow-wrap: anywhere; }
 .contatos a:hover { color: var(--texto); }
+
+/* trajetória */
+.traj { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); }
+.traj__tit { font-family: var(--sans); font-size: .7rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--vermelho-claro); margin-bottom: 22px; }
+.linha { list-style: none; margin: 0 0 32px; padding: 0; border-left: 1px solid var(--linha); }
+.linha li { position: relative; padding: 0 0 30px 28px; }
+.linha li:last-child { padding-bottom: 0; }
+.linha li::before { content: ""; position: absolute; left: -4px; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: var(--vermelho); }
+.linha__ano { margin: 0 0 6px; font-family: var(--mono); font-size: .85rem; color: var(--suave); }
+.linha__ano span { margin-left: 6px; font-size: .75rem; opacity: .7; }
+.linha h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 1.25rem; font-weight: 600; line-height: 1.25; }
+.linha li > p:last-child { margin: 0; font-size: .95rem; color: var(--suave); }
+
+/* ficha técnica dos projetos */
+.creditos { list-style: none; margin: 24px 0 0; padding: 18px 0 0; border-top: 1px solid var(--linha); display: grid; grid-template-columns: auto auto 1fr; gap: 12px 28px; font-size: .9rem; }
+.creditos span { display: block; margin-bottom: 4px; font-size: .65rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--vermelho-claro); }
+.regiao { margin: 14px 0 0; font-size: .9rem; }
+
+@media (max-width: 860px) { .traj { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .creditos { grid-template-columns: 1fr 1fr; } .creditos li:last-child { grid-column: 1 / -1; } }
